@@ -17,13 +17,11 @@
       <h1>Vue Events</h1>
     </header>
     <section id="events">
-      <h2>Events in Action</h2>
-      <input type="number" v-on:input="changeRange" placeholder="buoc nhay" v-bind:value="range">
-      <button v-on:click="add">Add</button>
-      <button v-on:click="reduce">Remove</button>
-      <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName">
-      <p>Name: {{ name }}</p>
+      FirstName
+      <input type="text" v-model="firstName">
+      LastName
+      <input type="text" v-model="lastName">
+      <p>Name: {{ fullName }}</p>
     </section>
   </body>
 </html>
